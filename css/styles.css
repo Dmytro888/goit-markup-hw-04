@@ -186,7 +186,7 @@ img {
 }
 
 .hero {
-  width: 1600px;
+  max-width: 1600px;
   min-height: 600px;
   margin: 0 auto;
   background-image: linear-gradient(
@@ -440,15 +440,23 @@ img {
   flex-wrap: wrap;
 }
 
+.porfolio-item:hover,
+.porfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
 .card-content {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .portfolio-list .item {
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
-  border: 1px solid #eeeeee;
 }
 
 .portfolio-list .item:nth-child(3n) {
@@ -482,7 +490,6 @@ img {
 /*----------------------------- footer --------------------------*/
 
 .footer {
-  width: 1600px;
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
